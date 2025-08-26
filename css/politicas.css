@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Colores corporativos */
+:root {
+    --color-fondo: #f9f9f9;
+    --color-texto: #333;
+    --color-principal: #1a73e8;
+    --color-acento: #4b6cb7;
+}
+
+/* Body */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* Sección principal */
+section.servicios {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+section.servicios h2 {
+    font-size: 2rem;
+    color: var(--color-principal);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section.servicios h3 {
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: var(--color-acento);
+}
+
+/* Párrafos y listas */
+section.servicios p {
+    margin-bottom: 15px;
+}
+
+section.servicios ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+section.servicios ul li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    border-top: 2px solid var(--color-principal);
+}
+
+footer a {
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--color-acento);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section.servicios {
+        margin: 40px 10px;
+        padding: 30px 15px;
+    }
+
+    section.servicios h2 {
+        font-size: 1.8rem;
+    }
+
+    section.servicios h3 {
+        font-size: 1.2rem;
+    }
+}
